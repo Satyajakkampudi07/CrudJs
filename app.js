@@ -65,7 +65,7 @@ app.put('/developers/:id', async (req, res) => {
     }
 });
 
-// DELETE a developer by ID
+
 app.delete('/developers/:id', async (req, res) => {
     try {
         const developer = await Developer.findByIdAndDelete(req.params.id);
@@ -78,7 +78,7 @@ app.delete('/developers/:id', async (req, res) => {
     }
 });
 
-// Start the server
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
